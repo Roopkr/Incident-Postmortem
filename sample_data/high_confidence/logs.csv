@@ -1,0 +1,31 @@
+timestamp,service,level,message,trace_id
+2026-03-01T10:00:00,checkout-api,INFO,Deploy 2026.3.1.9 started,tr-hc-0001
+2026-03-01T10:00:20,checkout-api,INFO,Canary promoted to 100 percent traffic,tr-hc-0002
+2026-03-01T10:00:40,checkout-api,ERROR,memory leak detected in checkout session allocator,tr-hc-0003
+2026-03-01T10:00:45,checkout-api,ERROR,memory leak detected in checkout session allocator,tr-hc-0004
+2026-03-01T10:00:50,checkout-api,ERROR,memory leak caused request allocation timeout,tr-hc-0005
+2026-03-01T10:00:55,checkout-api,ERROR,memory leak caused request allocation timeout,tr-hc-0006
+2026-03-01T10:01:00,checkout-api,ERROR,memory leak triggered heap exhaustion,tr-hc-0007
+2026-03-01T10:01:05,checkout-api,ERROR,memory leak triggered heap exhaustion,tr-hc-0008
+2026-03-01T10:01:10,checkout-api,ERROR,memory leak increased container rss above limit,tr-hc-0009
+2026-03-01T10:01:15,checkout-api,ERROR,memory leak increased container rss above limit,tr-hc-0010
+2026-03-01T10:01:20,checkout-api,ERROR,memory leak correlated with checkout-api v2026.3.1.9,tr-hc-0011
+2026-03-01T10:01:25,checkout-api,ERROR,memory leak correlated with checkout-api v2026.3.1.9,tr-hc-0012
+2026-03-01T10:01:30,checkout-api,ERROR,memory leak regression in object cache path,tr-hc-0013
+2026-03-01T10:01:35,checkout-api,ERROR,memory leak regression in object cache path,tr-hc-0014
+2026-03-01T10:01:40,checkout-api,ERROR,memory leak produced pod restart,tr-hc-0015
+2026-03-01T10:01:45,checkout-api,ERROR,memory leak produced pod restart,tr-hc-0016
+2026-03-01T10:01:50,checkout-api,ERROR,memory leak produced elevated 5xx rate,tr-hc-0017
+2026-03-01T10:01:55,checkout-api,ERROR,memory leak produced elevated 5xx rate,tr-hc-0018
+2026-03-01T10:02:00,checkout-api,ERROR,memory leak confirmed by heap profile,tr-hc-0019
+2026-03-01T10:02:05,checkout-api,ERROR,memory leak confirmed by heap profile,tr-hc-0020
+2026-03-01T10:02:10,checkout-api,ERROR,memory leak still active before rollback,tr-hc-0021
+2026-03-01T10:02:15,checkout-api,ERROR,memory leak still active before rollback,tr-hc-0022
+2026-03-01T10:02:20,checkout-api,ERROR,memory leak linked to allocator refactor,tr-hc-0023
+2026-03-01T10:02:25,checkout-api,ERROR,memory leak linked to allocator refactor,tr-hc-0024
+2026-03-01T10:02:30,checkout-api,ERROR,memory leak exhausted memory pool,tr-hc-0025
+2026-03-01T10:02:35,checkout-api,ERROR,memory leak exhausted memory pool,tr-hc-0026
+2026-03-01T10:03:00,checkout-api,INFO,Rollback to 2026.2.28.7 started,tr-hc-0027
+2026-03-01T10:03:20,checkout-api,INFO,Rollback completed on all pods,tr-hc-0028
+2026-03-01T10:03:40,checkout-api,INFO,No memory leak symptoms after rollback,tr-hc-0029
+2026-03-01T10:04:00,checkout-api,INFO,Checkout error rate normalized to baseline,tr-hc-0030

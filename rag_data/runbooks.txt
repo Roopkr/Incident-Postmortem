@@ -1,0 +1,13 @@
+Runbook: Memory Leak Investigation
+1. Align deployment time with first warning and first error.
+2. Validate sustained memory increase and GC pause growth.
+3. Inspect stack traces for allocation failures in a shared module.
+4. Distinguish primary symptoms from secondary alerts.
+5. If memory and error curves worsen together, execute rollback.
+6. Confirm recovery with lower memory, lower error rate, and stable latency.
+
+Runbook: High Error Rate Triage
+1. Check if a release occurred in last 10 minutes.
+2. Compare timeline across gateway, app, auth, and DB services.
+3. Determine leading indicator rather than correlated noise.
+4. Apply mitigation that improves customer success rate first.

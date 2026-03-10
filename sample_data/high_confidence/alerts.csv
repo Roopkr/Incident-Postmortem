@@ -1,0 +1,5 @@
+timestamp,service,severity,alert_type,message,status
+2026-03-01T10:01:00,checkout-api,critical,error_rate,5xx exceeded 15 percent threshold,open
+2026-03-01T10:01:10,checkout-api,critical,memory_pressure,Container memory above 97 percent,open
+2026-03-01T10:01:20,checkout-api,critical,oom_kill,OOMKill observed on checkout pod,open
+2026-03-01T10:03:30,checkout-api,info,recovery,Error rate recovered after rollback,closed

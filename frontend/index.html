@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Incident Postmortem Copilot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="panel">
+      <h1>AI Incident Postmortem Copilot</h1>
+      <p class="subtitle">Upload files and generate a polished postmortem report in one step.</p>
+      <div class="upload-grid">
+        <label class="upload-item" for="logs-file">
+          <span>Logs CSV</span>
+          <input id="logs-file" type="file" accept=".csv,text/csv" />
+        </label>
+        <label class="upload-item" for="alerts-file">
+          <span>Alerts CSV (optional)</span>
+          <input id="alerts-file" type="file" accept=".csv,text/csv" />
+        </label>
+        <label class="upload-item" for="deployments-file">
+          <span>Deployments CSV (optional)</span>
+          <input id="deployments-file" type="file" accept=".csv,text/csv" />
+        </label>
+        <label class="upload-item" for="ticket-file">
+          <span>Incident Ticket JSON (optional)</span>
+          <input id="ticket-file" type="file" accept=".json,application/json" />
+        </label>
+      </div>
+
+      <button id="run-btn" type="button">Generate Report</button>
+      <p class="hint">If no file is uploaded, sample incident data is used.</p>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section id="output" class="output">
+      <p class="placeholder">Report output will appear here.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

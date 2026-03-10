@@ -1,0 +1,11 @@
+Pattern: Error spike 2-5 minutes after deployment
+Interpretation: Often indicates release-time regression that requires production load before surfacing.
+
+Pattern: Gradual memory growth with moderate CPU
+Interpretation: Strong memory leak signal. Verify with allocator errors and GC pause increase.
+
+Pattern: Retry storm masking root cause
+Interpretation: Gateway retries can create DB pressure that appears primary but is downstream.
+
+Pattern: Isolated auth CPU spike during payment incident
+Interpretation: Can be unrelated noise unless payment traces show auth dependency on failing path.

@@ -1,0 +1,6 @@
+timestamp,service,event,version,author,notes
+2026-03-01T09:00:00,checkout-api,deploy,2026.2.28.7,release-bot,stable baseline
+2026-03-01T10:00:00,checkout-api,deploy,2026.3.1.9,release-bot,allocator refactor introduced
+2026-03-01T10:00:30,checkout-api,verify,2026.3.1.9,sre-oncall,smoke test initially passed
+2026-03-01T10:03:00,checkout-api,rollback,2026.2.28.7,sre-oncall,rollback due to memory leak
+2026-03-01T10:03:20,checkout-api,verify,2026.2.28.7,sre-oncall,service recovered after rollback

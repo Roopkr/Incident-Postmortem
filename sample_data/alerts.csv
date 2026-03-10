@@ -1,0 +1,11 @@
+timestamp,service,severity,alert_type,message,status
+2026-02-21T09:59:00,checkout-api,info,latency_watch,Latency within baseline,closed
+2026-02-21T10:04:00,checkout-api,warning,memory_growth,Heap usage increased 35% in 2 minutes,open
+2026-02-21T10:06:00,checkout-api,critical,error_rate,5xx exceeded 8% threshold,open
+2026-02-21T10:07:00,checkout-api,critical,pod_restarts,Multiple checkout pods restarting,open
+2026-02-21T10:08:00,payment-worker,warning,queue_lag,Payment queue lag reached 90s,open
+2026-02-21T10:09:00,checkout-api,critical,memory_pressure,Container memory near limit 95%,open
+2026-02-21T10:10:30,checkout-api,critical,oom_kill,OOMKill observed on checkout pod-7f9d,open
+2026-02-21T10:12:30,checkout-api,warning,error_rate,5xx falling after rollback,open
+2026-02-21T10:14:00,checkout-api,info,recovery,Error budget burn back to normal,closed
+2026-02-21T10:15:00,checkout-api,info,incident_resolved,Service stabilized after rollback,closed

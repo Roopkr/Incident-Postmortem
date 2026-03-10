@@ -1,0 +1,13 @@
+Flask
+langchain
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-openai
+langgraph
+chromadb
+openai
+pandas
+pydantic
+python-dotenv
+serverless-wsgi

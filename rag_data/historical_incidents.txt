@@ -1,0 +1,9 @@
+Incident: INC-2025-1103-04
+Title: Payment memory leak after release
+Summary: A payment-service deployment appeared healthy at rollout time, but error rates climbed after a few minutes. Auth CPU and DB pool signals appeared at the same time and initially misled triage. Rolling back payment-service immediately reduced allocation failures and restored checkout success rates.
+Key learning: When memory slope, error growth, and rollback recovery align, deployment regression is likely primary.
+
+Incident: INC-2024-0914-12
+Title: Retry storm caused DB exhaustion
+Summary: Network jitter triggered aggressive retries and saturated DB connections. App CPU stayed normal while gateway timeouts increased.
+Key learning: If DB saturation starts before app memory growth, investigate retry policy and circuit breakers first.

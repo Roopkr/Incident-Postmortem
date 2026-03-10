@@ -1,0 +1,11 @@
+{
+  "incident_id": "INC-2026-0221-01",
+  "title": "Checkout API elevated 5xx and latency",
+  "reported_at": "2026-02-21T10:06:30",
+  "severity": "SEV-1",
+  "status": "resolved",
+  "resolved_at": "2026-02-21T10:15:00",
+  "impacted_services": ["checkout-api", "payment-worker"],
+  "customer_impact": "Approximately 18% of checkout attempts failed between 10:05 and 10:12.",
+  "summary": "A checkout-api deployment at 10:02 introduced a memory leak. Errors spiked by 10:05, critical alerts fired at 10:07, rollback completed at 10:12, and the incident resolved at 10:15."
+}

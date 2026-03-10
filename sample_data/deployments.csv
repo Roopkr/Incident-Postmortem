@@ -1,0 +1,11 @@
+timestamp,service,event,version,author,notes
+2026-02-20T22:00:00,checkout-api,deploy,2026.2.20.8,release-bot,nightly deploy stable
+2026-02-20T22:30:00,payment-worker,deploy,2026.2.20.5,release-bot,queue optimization
+2026-02-21T08:15:00,inventory-api,deploy,2026.2.21.2,release-bot,cache refresh tuning
+2026-02-21T09:10:00,checkout-api,config,2026.2.21.0,sre-oncall,feature flag prep
+2026-02-21T09:40:00,payment-worker,config,2026.2.21.0,sre-oncall,concurrency bump
+2026-02-21T10:02:00,checkout-api,deploy,2026.2.21.1,release-bot,memory allocator refactor
+2026-02-21T10:03:30,checkout-api,verify,2026.2.21.1,sre-oncall,smoke test passed
+2026-02-21T10:12:00,checkout-api,rollback,2026.2.20.8,sre-oncall,rollback due to rising 5xx
+2026-02-21T10:16:00,checkout-api,verify,2026.2.20.8,sre-oncall,health restored
+2026-02-21T11:00:00,checkout-api,deploy,2026.2.21.2,release-bot,hotfix with leak patch
